@@ -1,0 +1,71 @@
+// list reset
+%listreset {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+// clearfix
+%clearfix {
+ &:after {
+    content: '';
+    display: block;
+    clear: both;
+  }
+}
+
+.clearfix {
+  @extend %clearfix;
+}
+
+
+// transition
+
+@mixin transition($args...) {
+  -webkit-transition: $args;
+  -moz-transition: $args;
+  -ms-transition: $args;
+  -o-transition: $args;
+  transition: $args;
+}
+
+@mixin transform_rotate($args...) {
+    -moz-transform:rotate($args);
+    -webkit-transform:rotate($args);
+    -ms-transform:rotate($args);
+    transform:rotate($args);
+}
+
+// justify nav
+%justify {
+ text-align: justify;
+ font-size: 1px;
+ line-height: 0px;
+ > * {
+  display: inline-block;
+  vertical-align: middle;
+  text-align: left;
+  font-size: $base-font-size;
+  line-height: $base-line-height;
+ }
+ &:after {
+  content: '';
+  width: 100%;
+  display: inline-block;
+  vertical-align: middle;
+ }
+}
+
+
+
+/// * Helper class to truncate and add ellipsis to a string too long for it to fit
+/// * on a single line.
+/// * 1. Prevent content from wrapping, forcing it on a single line.
+/// * 2. Add ellipsis at the end of the line.
+
+.ellipsis {
+  white-space: nowrap; /* 1 */
+  text-overflow: ellipsis; /* 2 */
+  overflow: hidden;
+}
+

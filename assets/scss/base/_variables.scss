@@ -1,0 +1,263 @@
+// Colors
+
+
+$black: 			 #111;
+$white: 			 #fff;
+$gray:               #53595d;
+$yellow:             #d4b965;
+$gray-light:         #8f9497;
+
+$base-text-color:    #53595d;
+
+
+$font-family-base: 'proxima_nova_regular', Helvetica, Arial, sans-serif;
+
+// Body
+$base-text-color: $base-text-color !default;
+$base-background-color:  $white !default;
+$base-font-size: 16px !default;
+$base-line-height: 1.5 !default;
+$base-font-family: $font-family-base !default;
+
+$vertical-rhythm: ($base-line-height * 1em);
+
+$base-min-width: 320px;
+  
+
+
+// Liks
+
+$base-link-color: $gray;
+$link-hover-color:   $yellow;
+
+// Buttons 
+
+$btn-color: $white !default;
+$btn-background: $yellow !default;
+$btn-padding: 17px 5px !default;
+$btn-font-size: 16px !default;
+
+
+
+// Forms
+
+$form-element-padding: $btn-padding !default;
+$form-element-border-color: $base-text-color !default;
+$form-element-focus-border-color: $black !default;
+$placeholder-color: $white !default;
+$input-font-size: 18px ;
+
+// Headers
+
+$font-size-h1:	floor(($base-font-size * 1.9))  !default; // 30px
+$font-size-h2:	floor(($base-font-size * 1.9))  !default; // 30px
+
+$font-size-h3:	floor(($base-font-size * 1.3)) !default; // 20px
+$font-size-h4:	floor(($base-font-size * 1.15)) !default; // 18px
+$font-size-h5:	ceil(($base-font-size * 0.85)) !default; // 14px
+
+
+$headings-font-family: inherit !default;
+$headings-color: inherit !default;
+
+$font-size-lg:        ceil(($base-font-size * 1.25)); // ~18px
+$font-size-sm:        ceil(($base-font-size * 0.8)); // ~12px;
+
+
+h1, .h1,
+h2, .h2,
+h3, .h3,
+h4, .h4,
+h5, .h5,
+h6, .h6,
+.h {
+  font-family: $headings-font-family;
+  color: $yellow;
+  margin:0 0 0.5em;
+  text-transform: uppercase;
+  font-weight: normal;
+
+}
+
+h1, .h1 {
+  font-size: $font-size-h1;
+  letter-spacing: 2px;
+}
+
+h2, .h2 {
+  font-size: $font-size-h2;
+  letter-spacing: 2px;
+}
+
+h3, .h3 {
+  font-size: $font-size-h3;
+  letter-spacing: 1px;
+}
+
+h4, .h4 {
+  font-size: $font-size-h4;
+}
+
+h5, .h5 {
+  font-size: $font-size-h5;
+}
+
+h6, .h6 {
+  font-size: $font-size-h5;
+}
+
+// Typography
+
+p {
+  margin: 0 0 1em;
+}
+
+a {
+  color: $base-link-color;
+  text-decoration: none;
+  &:hover,
+  &:focus {
+     color: $link-hover-color;
+  }
+}
+
+
+//== Media queries breakpoints
+//
+//## Define the breakpoints at which your layout will change, adapting to different screen sizes.
+
+// Extra small screen / phone
+//** Deprecated `$screen-xs` as of v3.0.1
+$screen-xs:                  480px !default;
+//** Deprecated `$screen-xs-min` as of v3.2.0
+
+
+$screen-xs-min:              $screen-xs !default;
+//** Deprecated `$screen-phone` as of v3.0.1
+$screen-phone:               $screen-xs-min !default;
+
+// Small screen / tablet
+//** Deprecated `$screen-sm` as of v3.0.1
+$screen-sm:                  768px !default;
+$screen-sm-min:              $screen-sm !default;
+//** Deprecated `$screen-tablet` as of v3.0.1
+$screen-tablet:              $screen-sm-min !default;
+
+// Medium screen / desktop
+//** Deprecated `$screen-md` as of v3.0.1
+$screen-md:                  992px !default;
+$screen-md-min:              $screen-md !default;
+//** Deprecated `$screen-desktop` as of v3.0.1
+$screen-desktop:             $screen-md-min !default;
+
+// Large screen / wide desktop
+//** Deprecated `$screen-lg` as of v3.0.1
+$screen-lg:                  1200px !default;
+$screen-lg-min:              $screen-lg !default;
+//** Deprecated `$screen-lg-desktop` as of v3.0.1
+$screen-lg-desktop:          $screen-lg-min !default;
+
+// So media queries don't overlap when required, provide a maximum
+$screen-xs-max:              ($screen-sm-min - 1) !default;
+$screen-sm-max:              ($screen-md-min - 1) !default;
+$screen-md-max:              ($screen-lg-min - 1) !default;
+
+
+//== Grid system
+//
+//## Define your custom responsive grid.
+
+//** Number of columns in the grid.
+
+$grid-columns:              12;
+
+
+//** Padding between columns. Gets divided in half for the left and right.
+$grid-gutter-width:         30px !default;
+// Navbar collapse
+//** Point at which the navbar becomes uncollapsed.
+$grid-float-breakpoint:     $screen-sm-min !default;
+//** Point at which the navbar begins collapsing.
+$grid-float-breakpoint-max: ($grid-float-breakpoint - 1) !default;
+
+
+//== Container sizes
+//
+//## Define the maximum width of `.container` for different screen sizes.
+
+// Small screen / tablet
+$container-tablet:             (720px + $grid-gutter-width) !default;
+//** For `$screen-sm-min` and up.
+$container-sm:                 $container-tablet !default;
+
+// Medium screen / desktop
+$container-desktop:            (940px + $grid-gutter-width) !default;
+//** For `$screen-md-min` and up.
+$container-md:                 $container-desktop !default;
+
+// Large screen / wide desktop
+$container-large-desktop:      (1170px + $grid-gutter-width) !default;
+//** For `$screen-lg-min` and up.
+$container-lg:                 $container-large-desktop !default;
+
+
+//== Media queries breakpoints
+//
+//## Define the breakpoints at which your layout will change, adapting to different screen sizes.
+
+// Extra small screen / phone
+//** Deprecated `$screen-xs` as of v3.0.1
+$screen-xs:                  480px !default;
+//** Deprecated `$screen-xs-min` as of v3.2.0
+$screen-xs-min:              $screen-xs !default;
+//** Deprecated `$screen-phone` as of v3.0.1
+$screen-phone:               $screen-xs-min !default;
+
+// Small screen / tablet
+//** Deprecated `$screen-sm` as of v3.0.1
+$screen-sm:                  768px !default;
+$screen-sm-min:              $screen-sm !default;
+//** Deprecated `$screen-tablet` as of v3.0.1
+$screen-tablet:              $screen-sm-min !default;
+
+// Medium screen / desktop
+//** Deprecated `$screen-md` as of v3.0.1
+$screen-md:                  992px !default;
+$screen-md-min:              $screen-md !default;
+//** Deprecated `$screen-desktop` as of v3.0.1
+$screen-desktop:             $screen-md-min !default;
+
+// Large screen / wide desktop
+//** Deprecated `$screen-lg` as of v3.0.1
+$screen-lg:                  1400px !default;
+$screen-lg-min:              $screen-lg !default;
+//** Deprecated `$screen-lg-desktop` as of v3.0.1
+$screen-lg-desktop:          $screen-lg-min !default;
+
+// So media queries don't overlap when required, provide a maximum
+$screen-xs-max:              ($screen-sm-min - 1) !default;
+$screen-sm-max:              ($screen-md-min - 1) !default;
+$screen-md-max:              ($screen-lg-min - 1) !default;
+
+//== Components
+//
+//## Define common padding and border radius sizes and more. Values based on 14px text and 1.428 line-height (~20px to start).
+
+$padding-base-vertical:     6px !default;
+$padding-base-horizontal:   12px !default;
+
+$padding-large-vertical:    10px !default;
+$padding-large-horizontal:  16px !default;
+
+$padding-small-vertical:    5px !default;
+$padding-small-horizontal:  10px !default;
+
+$padding-xs-vertical:       1px !default;
+$padding-xs-horizontal:     5px !default;
+
+$line-height-large:         1.3333333 !default; // extra decimals for Win 8.1 Chrome
+$line-height-small:         1.5 !default;
+
+$border-radius-base:        4px !default;
+$border-radius-large:       6px !default;
+$border-radius-small:       3px !default;
