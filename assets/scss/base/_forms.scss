@@ -5,85 +5,85 @@ fieldset {
   margin: 0;
   padding: 0;
   border-style: none;
-}
 
-input[type='text'],
-input[type='tel'],
-input[type='email'],
-input[type='search'],
-input[type='password'],
-input[type='number'],
-//input[type='url'],
-// input[type='date'],
-textarea {
-  -webkit-appearance: none;
-  -webkit-border-radius: 0;
-  box-sizing: border-box;
-  -webkit-box-shadow: 0;
-  width: 100%;
-  height: auto;
-  padding: 16px 27px;
-  border-radius: 0;
-  background: none;
-  font-size: $input-font-size;
-  text-transform: uppercase;
-  outline: none;
-  box-shadow: none;
-  color: $yellow;
-  border: solid 2px ;
-  line-height: 28px;
-  letter-spacing:2px;
-  @include placeholder {
+  input[type='text'],
+  input[type='tel'],
+  input[type='email'],
+  input[type='search'],
+  input[type='password'],
+  input[type='number'],
+    //input[type='url'],
+    // input[type='date'],
+  textarea {
+    -webkit-appearance: none;
+    -webkit-border-radius: 0;
+    box-sizing: border-box;
+    -webkit-box-shadow: 0;
+    width: 100%;
+    height: auto;
+    padding: 16px 27px;
+    border-radius: 0;
+    background: none;
+    font-size: $input-font-size;
+    text-transform: uppercase;
+    outline: none;
+    box-shadow: none;
     color: $yellow;
-    opacity: 1;
+    border: solid 2px ;
+    line-height: 28px;
+    letter-spacing:2px;
+    @include placeholder {
+      color: $yellow;
+      opacity: 1;
+    }
   }
-}
 
-textarea {
-  resize: vertical;
-  vertical-align: top;
-}
+  textarea {
+    resize: vertical;
+    vertical-align: top;
+  }
 
-legend {
-  display: block;
-  text-transform: uppercase;
-  color: $yellow;
-  font-size: ceil(($base-font-size * 0.85));
-  margin: 0 auto 10px;
-}
-
-label{
-  color: $gray-light;
-  text-transform: uppercase;
-  display: inline-block;
-  vertical-align: top;
-  font: normal 14px/20px 'proxima_nova_bold', Arial, Helvetica, sans-serif;
-  letter-spacing: 1px;
-}
-
-button,
-input[type='button'],
-input[type='reset'],
-input[type='file'],
-input[type='submit'] {
-  -webkit-appearance: none;
-  -webkit-border-radius: 0;
-  cursor: pointer;
-  border: solid 2px $yellow;
-  box-shadow: none;
-  background: $btn-background;
-  outline: none;
-  color: $btn-color;
-  padding: $btn-padding;
-  text-transform: uppercase;
-  letter-spacing:1px;
-  text-align: center;
-  font:  #{$btn-font-size}/#{26px}  Helvetica, Arial, sans-serif;
-  @include transition(background .2s linear);
-  &:hover,
-  &:focus{
-    background: $white;
+  legend {
+    display: block;
+    text-transform: uppercase;
     color: $yellow;
+    font-size: ceil(($base-font-size * 0.85));
+    margin: 0 auto 10px;
+  }
+
+  label{
+    color: $gray-light;
+    text-transform: uppercase;
+    display: inline-block;
+    vertical-align: top;
+    font: normal 14px/20px 'proxima_nova_bold', Arial, Helvetica, sans-serif;
+    letter-spacing: 1px;
+  }
+
+  button,
+  input[type='button'],
+  input[type='reset'],
+  input[type='file'],
+  input[type='submit'] {
+    -webkit-appearance: none;
+    -webkit-border-radius: 0;
+    cursor: pointer;
+    border: solid 2px $yellow;
+    box-shadow: none;
+    background: $btn-background;
+    outline: none;
+    color: $btn-color;
+    padding: $btn-padding;
+    text-transform: uppercase;
+    letter-spacing:1px;
+    text-align: center;
+    font:  #{$btn-font-size}/#{26px}  Helvetica, Arial, sans-serif;
+    @include transition(background .2s linear);
+    &:hover,
+    &:focus{
+      background: $white;
+      color: $yellow;
+    }
   }
 }
 

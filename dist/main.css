@@ -903,131 +903,186 @@ fieldset {
   margin: 0;
   padding: 0;
   border-style: none; }
-
-input[type='text'],
-input[type='tel'],
-input[type='email'],
-input[type='search'],
-input[type='password'],
-input[type='number'],
-textarea {
-  -webkit-appearance: none;
-  -webkit-border-radius: 0;
-  box-sizing: border-box;
-  -webkit-box-shadow: 0;
-  width: 100%;
-  height: auto;
-  padding: 16px 27px;
-  border-radius: 0;
-  background: none;
-  font-size: 18px;
-  text-transform: uppercase;
-  outline: none;
-  box-shadow: none;
-  color: #d4b965;
-  border: solid 2px;
-  line-height: 28px;
-  letter-spacing: 2px; }
-  input[type='text']::-webkit-input-placeholder,
-  input[type='tel']::-webkit-input-placeholder,
-  input[type='email']::-webkit-input-placeholder,
-  input[type='search']::-webkit-input-placeholder,
-  input[type='password']::-webkit-input-placeholder,
-  input[type='number']::-webkit-input-placeholder,
-  textarea::-webkit-input-placeholder {
+  form input[type='text'],
+  form input[type='tel'],
+  form input[type='email'],
+  form input[type='search'],
+  form input[type='password'],
+  form input[type='number'],
+  form textarea,
+  fieldset input[type='text'],
+  fieldset input[type='tel'],
+  fieldset input[type='email'],
+  fieldset input[type='search'],
+  fieldset input[type='password'],
+  fieldset input[type='number'],
+  fieldset textarea {
+    -webkit-appearance: none;
+    -webkit-border-radius: 0;
+    box-sizing: border-box;
+    -webkit-box-shadow: 0;
+    width: 100%;
+    height: auto;
+    padding: 16px 27px;
+    border-radius: 0;
+    background: none;
+    font-size: 18px;
+    text-transform: uppercase;
+    outline: none;
+    box-shadow: none;
     color: #d4b965;
-    opacity: 1; }
-  input[type='text']::-moz-placeholder,
-  input[type='tel']::-moz-placeholder,
-  input[type='email']::-moz-placeholder,
-  input[type='search']::-moz-placeholder,
-  input[type='password']::-moz-placeholder,
-  input[type='number']::-moz-placeholder,
-  textarea::-moz-placeholder {
-    opacity: 1;
+    border: solid 2px;
+    line-height: 28px;
+    letter-spacing: 2px; }
+    form input[type='text']::-webkit-input-placeholder,
+    form input[type='tel']::-webkit-input-placeholder,
+    form input[type='email']::-webkit-input-placeholder,
+    form input[type='search']::-webkit-input-placeholder,
+    form input[type='password']::-webkit-input-placeholder,
+    form input[type='number']::-webkit-input-placeholder,
+    form textarea::-webkit-input-placeholder,
+    fieldset input[type='text']::-webkit-input-placeholder,
+    fieldset input[type='tel']::-webkit-input-placeholder,
+    fieldset input[type='email']::-webkit-input-placeholder,
+    fieldset input[type='search']::-webkit-input-placeholder,
+    fieldset input[type='password']::-webkit-input-placeholder,
+    fieldset input[type='number']::-webkit-input-placeholder,
+    fieldset textarea::-webkit-input-placeholder {
+      color: #d4b965;
+      opacity: 1; }
+    form input[type='text']::-moz-placeholder,
+    form input[type='tel']::-moz-placeholder,
+    form input[type='email']::-moz-placeholder,
+    form input[type='search']::-moz-placeholder,
+    form input[type='password']::-moz-placeholder,
+    form input[type='number']::-moz-placeholder,
+    form textarea::-moz-placeholder,
+    fieldset input[type='text']::-moz-placeholder,
+    fieldset input[type='tel']::-moz-placeholder,
+    fieldset input[type='email']::-moz-placeholder,
+    fieldset input[type='search']::-moz-placeholder,
+    fieldset input[type='password']::-moz-placeholder,
+    fieldset input[type='number']::-moz-placeholder,
+    fieldset textarea::-moz-placeholder {
+      opacity: 1;
+      color: #d4b965;
+      opacity: 1; }
+    form input[type='text']:-moz-placeholder,
+    form input[type='tel']:-moz-placeholder,
+    form input[type='email']:-moz-placeholder,
+    form input[type='search']:-moz-placeholder,
+    form input[type='password']:-moz-placeholder,
+    form input[type='number']:-moz-placeholder,
+    form textarea:-moz-placeholder,
+    fieldset input[type='text']:-moz-placeholder,
+    fieldset input[type='tel']:-moz-placeholder,
+    fieldset input[type='email']:-moz-placeholder,
+    fieldset input[type='search']:-moz-placeholder,
+    fieldset input[type='password']:-moz-placeholder,
+    fieldset input[type='number']:-moz-placeholder,
+    fieldset textarea:-moz-placeholder {
+      color: #d4b965;
+      opacity: 1; }
+    form input[type='text']:-ms-input-placeholder,
+    form input[type='tel']:-ms-input-placeholder,
+    form input[type='email']:-ms-input-placeholder,
+    form input[type='search']:-ms-input-placeholder,
+    form input[type='password']:-ms-input-placeholder,
+    form input[type='number']:-ms-input-placeholder,
+    form textarea:-ms-input-placeholder,
+    fieldset input[type='text']:-ms-input-placeholder,
+    fieldset input[type='tel']:-ms-input-placeholder,
+    fieldset input[type='email']:-ms-input-placeholder,
+    fieldset input[type='search']:-ms-input-placeholder,
+    fieldset input[type='password']:-ms-input-placeholder,
+    fieldset input[type='number']:-ms-input-placeholder,
+    fieldset textarea:-ms-input-placeholder {
+      color: #d4b965;
+      opacity: 1; }
+    form input[type='text'].placeholder,
+    form input[type='tel'].placeholder,
+    form input[type='email'].placeholder,
+    form input[type='search'].placeholder,
+    form input[type='password'].placeholder,
+    form input[type='number'].placeholder,
+    form textarea.placeholder,
+    fieldset input[type='text'].placeholder,
+    fieldset input[type='tel'].placeholder,
+    fieldset input[type='email'].placeholder,
+    fieldset input[type='search'].placeholder,
+    fieldset input[type='password'].placeholder,
+    fieldset input[type='number'].placeholder,
+    fieldset textarea.placeholder {
+      color: #d4b965;
+      opacity: 1; }
+  form textarea,
+  fieldset textarea {
+    resize: vertical;
+    vertical-align: top; }
+  form legend,
+  fieldset legend {
+    display: block;
+    text-transform: uppercase;
     color: #d4b965;
-    opacity: 1; }
-  input[type='text']:-moz-placeholder,
-  input[type='tel']:-moz-placeholder,
-  input[type='email']:-moz-placeholder,
-  input[type='search']:-moz-placeholder,
-  input[type='password']:-moz-placeholder,
-  input[type='number']:-moz-placeholder,
-  textarea:-moz-placeholder {
-    color: #d4b965;
-    opacity: 1; }
-  input[type='text']:-ms-input-placeholder,
-  input[type='tel']:-ms-input-placeholder,
-  input[type='email']:-ms-input-placeholder,
-  input[type='search']:-ms-input-placeholder,
-  input[type='password']:-ms-input-placeholder,
-  input[type='number']:-ms-input-placeholder,
-  textarea:-ms-input-placeholder {
-    color: #d4b965;
-    opacity: 1; }
-  input[type='text'].placeholder,
-  input[type='tel'].placeholder,
-  input[type='email'].placeholder,
-  input[type='search'].placeholder,
-  input[type='password'].placeholder,
-  input[type='number'].placeholder,
-  textarea.placeholder {
-    color: #d4b965;
-    opacity: 1; }
-
-textarea {
-  resize: vertical;
-  vertical-align: top; }
-
-legend {
-  display: block;
-  text-transform: uppercase;
-  color: #d4b965;
-  font-size: 14px;
-  margin: 0 auto 10px; }
-
-label {
-  color: #8f9497;
-  text-transform: uppercase;
-  display: inline-block;
-  vertical-align: top;
-  font: normal 14px/20px 'proxima_nova_bold', Arial, Helvetica, sans-serif;
-  letter-spacing: 1px; }
-
-button,
-input[type='button'],
-input[type='reset'],
-input[type='file'],
-input[type='submit'] {
-  -webkit-appearance: none;
-  -webkit-border-radius: 0;
-  cursor: pointer;
-  border: solid 2px #d4b965;
-  box-shadow: none;
-  background: #d4b965;
-  outline: none;
-  color: #fff;
-  padding: 17px 5px;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  text-align: center;
-  font: 16px/26px Helvetica, Arial, sans-serif;
-  -webkit-transition: background 0.2s linear;
-  -moz-transition: background 0.2s linear;
-  -ms-transition: background 0.2s linear;
-  -o-transition: background 0.2s linear;
-  transition: background 0.2s linear; }
-  button:hover, button:focus,
-  input[type='button']:hover,
-  input[type='button']:focus,
-  input[type='reset']:hover,
-  input[type='reset']:focus,
-  input[type='file']:hover,
-  input[type='file']:focus,
-  input[type='submit']:hover,
-  input[type='submit']:focus {
-    background: #fff;
-    color: #d4b965; }
+    font-size: 14px;
+    margin: 0 auto 10px; }
+  form label,
+  fieldset label {
+    color: #8f9497;
+    text-transform: uppercase;
+    display: inline-block;
+    vertical-align: top;
+    font: normal 14px/20px 'proxima_nova_bold', Arial, Helvetica, sans-serif;
+    letter-spacing: 1px; }
+  form button,
+  form input[type='button'],
+  form input[type='reset'],
+  form input[type='file'],
+  form input[type='submit'],
+  fieldset button,
+  fieldset input[type='button'],
+  fieldset input[type='reset'],
+  fieldset input[type='file'],
+  fieldset input[type='submit'] {
+    -webkit-appearance: none;
+    -webkit-border-radius: 0;
+    cursor: pointer;
+    border: solid 2px #d4b965;
+    box-shadow: none;
+    background: #d4b965;
+    outline: none;
+    color: #fff;
+    padding: 17px 5px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-align: center;
+    font: 16px/26px Helvetica, Arial, sans-serif;
+    -webkit-transition: background 0.2s linear;
+    -moz-transition: background 0.2s linear;
+    -ms-transition: background 0.2s linear;
+    -o-transition: background 0.2s linear;
+    transition: background 0.2s linear; }
+    form button:hover, form button:focus,
+    form input[type='button']:hover,
+    form input[type='button']:focus,
+    form input[type='reset']:hover,
+    form input[type='reset']:focus,
+    form input[type='file']:hover,
+    form input[type='file']:focus,
+    form input[type='submit']:hover,
+    form input[type='submit']:focus,
+    fieldset button:hover,
+    fieldset button:focus,
+    fieldset input[type='button']:hover,
+    fieldset input[type='button']:focus,
+    fieldset input[type='reset']:hover,
+    fieldset input[type='reset']:focus,
+    fieldset input[type='file']:hover,
+    fieldset input[type='file']:focus,
+    fieldset input[type='submit']:hover,
+    fieldset input[type='submit']:focus {
+      background: #fff;
+      color: #d4b965; }
 
 .form-group:before, .form-group:after {
   content: " ";
