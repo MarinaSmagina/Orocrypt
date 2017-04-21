@@ -199,10 +199,9 @@ $media-expressions: (
 }
 
 #company{
-  background-image: url(../images/bg_gold.png) ;
-  background-position: 100% 0;
-
-  background-size: cover;
+  background-image: url(../images/bg_gold_3.png) ;
+  background-repeat: no-repeat;
+  background-size:1280px 857px;
 }
 .img-right-center,
 .img-top-right{
@@ -244,15 +243,15 @@ $media-expressions: (
   text-align: center;
   background-image: url(../images/bg_gold.png);
   background-repeat: no-repeat;
-  background-size: cover ;
-  background-position: 130% 80%;
+  background-size: 702px 469px ;
+  background-position: top right;
 }
 
 #contact{
  background-image: url(../images/bg_gold_2.png);
   background-repeat: no-repeat;
   background-position: 50% 100%;
-  background-size: cover;
+  background-size:1280px 857px;
 }
 
 
