@@ -1,0 +1,18 @@
+<svg width="19" height="15" viewBox="0 0 19 15" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:figma="http://www.figma.com/figma/ns">
+<title>Email</title>
+<desc>Created using Figma</desc>
+<g id="Canvas" transform="translate(-908 -4507)" figma:type="canvas">
+<g id="Email" figma:type="frame">
+<g id="Fill 1" figma:type="vector">
+<use xlink:href="#path0_fill" transform="translate(908.023 4507)" fill="#D4B965"/>
+</g>
+<g id="Fill 2" figma:type="vector">
+<use xlink:href="#path1_fill" transform="translate(908 4509.43)" fill="#D4B965"/>
+</g>
+</g>
+</g>
+<defs>
+<path id="path0_fill" fill-rule="evenodd" d="M 0 0L 9.405 7.578L 18.811 0L 0 0Z"/>
+<path id="path1_fill" fill-rule="evenodd" d="M 9.428 7.712L 0 0.115L 0 12.223L 18.999 12.223L 18.999 0L 9.428 7.712Z"/>
+</defs>
+</svg>

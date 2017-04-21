@@ -1,0 +1,22 @@
+<svg width="39" height="39" viewBox="0 0 39 39" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:figma="http://www.figma.com/figma/ns">
+<title>Linkedin Icon</title>
+<desc>Created using Figma</desc>
+<g id="Canvas" transform="translate(-945 -3036)" figma:type="canvas">
+<g id="Linkedin Icon" figma:type="frame">
+<g id="Stroke 1" figma:type="vector">
+<use xlink:href="#path0_stroke" transform="translate(946 3037)" fill="#FFFFFF"/>
+</g>
+<g id="Fill 3" figma:type="vector-operation">
+<use xlink:href="#path1_fill" transform="translate(956.751 3046.5)" fill="#FFFFFF"/>
+</g>
+<g id="Fill 5" figma:type="vector">
+<use xlink:href="#path2_fill" transform="translate(962.187 3051.34)" fill="#FFFFFF"/>
+</g>
+</g>
+</g>
+<defs>
+<path id="path0_stroke" d="M 35.092 18.046C 35.092 27.4607 27.4598 35.092 18.046 35.092L 18.046 37.092C 28.5642 37.092 37.092 28.5653 37.092 18.046L 35.092 18.046ZM 18.046 35.092C 8.63128 35.092 1 27.4607 1 18.046L -1 18.046C -1 28.5653 7.52671 37.092 18.046 37.092L 18.046 35.092ZM 1 18.046C 1 8.63225 8.63132 1 18.046 1L 18.046 -1C 7.52668 -1 -1 7.52775 -1 18.046L 1 18.046ZM 18.046 1C 27.4597 1 35.092 8.63229 35.092 18.046L 37.092 18.046C 37.092 7.52772 28.5643 -1 18.046 -1L 18.046 1Z"/>
+<path id="path1_fill" fill-rule="evenodd" d="M 3.69202 1.84595C 3.69202 0.826904 2.86499 0 1.84698 0C 0.825012 0 0 0.826904 0 1.84595C 0 2.86499 0.825012 3.69189 1.84698 3.69189C 2.86499 3.69189 3.69202 2.86499 3.69202 1.84595ZM 3.44 15.333L 0.252991 15.333L 0.252991 5.09106L 3.44 5.09106L 3.44 15.333Z"/>
+<path id="path2_fill" fill-rule="evenodd" d="M 0 0.254L 3.051 0.254L 3.051 1.654L 3.095 1.654C 3.52 0.849 4.558 0 6.107 0C 9.33 0 9.925 2.12 9.925 4.879L 9.925 10.496L 6.743 10.496L 6.743 5.515C 6.743 4.328 6.722 2.799 5.088 2.799C 3.432 2.799 3.179 4.093 3.179 5.43L 3.179 10.496L 0 10.496L 0 0.254Z"/>
+</defs>
+</svg>

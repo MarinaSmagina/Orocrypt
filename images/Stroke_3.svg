@@ -1,0 +1,12 @@
+<svg width="15" height="10" viewBox="0 0 15 10" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:figma="http://www.figma.com/figma/ns">
+<title>Stroke 2</title>
+<desc>Created using Figma</desc>
+<g id="Canvas" transform="translate(-777 2723)" figma:type="canvas">
+<g id="Stroke 2" figma:type="vector">
+<use xlink:href="#path0_stroke" transform="matrix(6.12323e-17 -1 1 6.12323e-17 778 -2714.5)" fill="#FFFFFF"/>
+</g>
+</g>
+<defs>
+<path id="path0_stroke" d="M 0 6.5L -0.680451 5.76721L -1.46961 6.5L -0.680451 7.23279L 0 6.5ZM 7.68045 12.2672L 0.680451 5.76721L -0.680451 7.23279L 6.31955 13.7328L 7.68045 12.2672ZM 0.680451 7.23279L 7.68045 0.732794L 6.31955 -0.732794L -0.680451 5.76721L 0.680451 7.23279Z"/>
+</defs>
+</svg>
