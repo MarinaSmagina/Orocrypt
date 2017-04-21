@@ -6,3 +6,10 @@ $(document).ready(function(){
 		slidesToScroll: 1
 	});
 });
+$('.scroll-btn').on('click', function() {
+    $.smoothScroll({
+        scrollElement: $('#token_sale'),
+        scrollTarget: '#findme'
+    });
+    return false;
+});
