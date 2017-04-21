@@ -107,7 +107,10 @@ fieldset {
 }
 
 .contact-form{
-
+    
+  label{
+    color: rgba(255, 255, 255, 0.5);
+  }
   .form-group{
     margin:0 0 20px;
   }
@@ -115,7 +118,8 @@ fieldset {
   .form-control{
     border: none;
     background: rgba(255, 255, 255, 0.25);
-    padding: 10px;
+    padding:7px 10px;
+    font-size:14px;
     //color: $gray-light;
 
   }
