@@ -1186,7 +1186,7 @@ fieldset {
   float: left;
   width: 207px;
   height: 23px;
-  margin: 50px 10px 20px 75px; }
+  margin: 50px 10px 50px 75px; }
   .logo a {
     display: block; }
   .logo img {
@@ -1226,7 +1226,7 @@ fieldset {
     width: 3px;
     background: rgba(143, 148, 151, 0.25); }
   #main-nav ul {
-    padding: 30vh 0 20px 80px;
+    padding: 25vh 0 20px 80px;
     font-size: 14px;
     font-family: 'proxima_nova_semibold',  Arial, "Helvetica Neue", Helvetica, sans-serif;
     max-height: 100%;
@@ -1329,7 +1329,8 @@ fieldset {
   text-align: center;
   background-image: url(../images/bg_gold.png);
   background-repeat: no-repeat;
-  background-size: cover; }
+  background-size: cover;
+  background-position: 130% 80%; }
 
 #contact {
   background-image: url(../images/bg_gold_2.png);

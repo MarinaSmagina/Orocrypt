@@ -61,7 +61,7 @@ $media-expressions: (
   float: left;
   width: 207px;
   height: 23px;
-  margin: 50px 10px 20px 75px;
+  margin: 50px 10px 50px 75px;
 
   a{
     display: block;
@@ -113,7 +113,7 @@ $media-expressions: (
   }
   ul{
     @extend %listreset;
-    padding:30vh 0 20px 80px;
+    padding:25vh 0 20px 80px;
     font-size: ceil(($base-font-size * 0.85));
     font-family: 'proxima_nova_semibold',  Arial, "Helvetica Neue", Helvetica, sans-serif;
     max-height: 100%;
@@ -244,7 +244,8 @@ $media-expressions: (
   text-align: center;
   background-image: url(../images/bg_gold.png);
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: cover ;
+  background-position: 130% 80%;
 }
 
 #contact{
